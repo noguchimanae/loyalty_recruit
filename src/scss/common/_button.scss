@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+/*================================
+button
+================================*/
+
+.button {
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+  background: $COLOR_SUB;
+  padding: 20px;
+
+  &.red {
+    background: $COLOR_BTN_ENTRY;
+  }
+}
+
+.panel {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+
+  .panel_inner {
+    @include shadowButton;
+    width: 370px;
+    padding: 15px;
+    text-align: center;
+    background: $COLOR_SUB;
+    font-size: $PC_FONT_M;
+    
+    &:hover {
+      color: $COLOR_TEXT;
+    }
+    
+    @include media(pc_min) {
+      width: 70%;
+    }
+    @include media(sp) {
+      font-size: $SP_FONT_M;
+    }
+  }
+}
+/*================================
+entry
+================================*/
+.entry_button {
+  a {
+    padding: 10px;
+    font-size: $PC_FONT_SS;
+    background: $COLOR_BTN_ENTRY;
+    color: $COLOR_TEXT_ENTRY;
+    @include transition(all 80ms ease-out);
+    font-weight: bold;
+  }
+  
+  @include media(pc_min) {
+    a {
+      padding: 17px 10px;
+    }
+  }
+}
+
+footer {
+  position: relative;
+
+  .footer_inner {
+    .entry_button {
+      float: right;
+      margin-left: 0;
+      display: inline-block;
+      
+      a {
+        @include transition(all 80ms ease-out);
+        padding: 10px 30px;
+        font-size: $PC_FONT_SS;
+        background: $COLOR_BTN_ENTRY;
+        //        color: $COLOR_TEXT_ENTRY;
+      }
+      @include media(pc_min) {
+        float: none;
+        width: 100%;
+
+        a {
+          width: 100%;
+          text-align: center;
+          padding: 20px 0;
+          margin-top: 10px;
+          margin-bottom: 30px;
+        }
+      }
+      @include media(sp) {
+        font-size: $SP_FONT_LLL;
+      }
+    }
+  }
+}
+
+nav {
+  .entry_button {
+    margin-left: 826px;
+    
+    a {
+      @include transition(all 80ms ease-out);
+      padding: 15px 10px;
+      font-size: $PC_FONT_SS;
+      background: $COLOR_BTN_ENTRY;
+      color: $COLOR_TEXT_ENTRY;
+    }
+    @include media(pc_min) {
+      width: 100%;
+      text-align: center;
+      margin: 20px 0 10px 0;
+      
+      a {
+        width: 90%;
+      }
+    }
+  }
+}
+
+/*================================
+pagetop
+================================*/
+
+.pagetop {
+  @include shadowButton;
+  float: right;
+  background: $COLOR_SUB url('/images/common/btn_arrow_top.png') center center no-repeat;
+  margin-bottom: 20px;
+  border: $COLOR_LINE;
+  
+  @include media(pc_min) {
+    position: fixed;
+//    background: $COLOR_SUB url('/images/common/btn_arrow_top.png') center center no-repeat;
+    width: 20px;
+    height: 20px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+}

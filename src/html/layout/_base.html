@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0"><!--比率固定-->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Loyalty Marketing, Inc.,株式会社 ロイヤリティマーケティング,ポンタ,Ponta,Pontaカード,ポイント,共通ポイント,セールスプロモーション,sp,メディア開発,ブランディング,マーケティング支援,決済代行,新卒,2017,採用" />
+  {% block meta %}{% endblock %}
+  <title>{% block title %}WEBSITE TITLE{% endblock %}</title>
+  <link rel="stylesheet" href="/css/style.css">
+  {% block css %}{% endblock %}
+</head>
+<body>
+  {% include "components/_header.html" %}
+  {% block body %}{% endblock %}
+  {% include "components/_footer.html" %}
+
+  <script src="/js/jquery-1.10.2.min.js"></script>
+  <script src="/js/jquery.maximage.min.js"></script>
+  <script src="/js/common.js"></script>
+  {% block js %}
+  {% endblock %}
+  
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</body>
+</html>

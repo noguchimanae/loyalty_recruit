@@ -1,0 +1,126 @@
+//--------------------------------------------
+//header
+//--------------------------------------------
+
+header {
+  width: 950px;
+  padding: 17px 10px 18px 20px;
+  margin: 0 auto;
+  background: $COLOR_MAIN;
+  position: absolute;
+  z-index: 9999;
+  left: 0;
+  right: 0;
+  
+  h1 {
+    float: left;
+    vertical-align: middle;
+
+    .logo {
+      background: url('/images/common/logo.png') no-repeat;
+      width: 176px;
+      height: 43px;
+    }
+  }
+  
+  nav {
+    @include clearfix;
+    ul {
+      @include clearfix;
+      padding-top: 15px;
+      float: left;
+      
+      li {
+        float: left;
+        padding-left: 30px;
+        a {
+          font-size: $PC_FONT_SS;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  @include media(pc_min) {
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid $COLOR_LINE;
+    
+    .sp {
+      nav {
+        @include clearfix;
+        display: none;
+        
+        ul {
+          padding-top: 45px;
+          width: 100%;
+          @include clearfix;
+          float: none;
+          
+          li {
+            float: none;
+            padding: 0;
+            text-align: center;
+            
+            &:first-child {
+              border-top: 1px solid $COLOR_LINE;
+              margin: 10px auto 0;
+            }
+            
+            a {
+              width: 94%;
+              padding: 20px 0;
+              margin: 0 auto;
+              border-bottom: 1px solid $COLOR_LINE;
+              background: url('/images/common/sp_arrow_right.png') no-repeat;
+              background-position: center right;
+              background-size: 10px;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+    
+    .header_menu {
+      position: absolute;
+      right: 20px;
+      margin-top: 7px;
+      
+      .text,
+      .img {
+        display: inline-block;
+      }
+      .img {
+        width: 25px;
+        height: 25px;
+        background: url('/images/common/btn_menu.png') no-repeat;
+        background-size: contain;
+        vertical-align: middle;
+      }
+      .text {
+        color: $COLOR_LINK_FOCUS;
+        font-size: $PC_FONT_S;
+        margin-right: 5px;
+        vertical-align: middle;
+        font-weight: bold;
+      }
+    }
+    h1 {
+      margin-left: 20px;
+      .logo {
+        background-size: contain;
+        width: 145px;
+        height: 36px;
+      }
+    }
+  }
+  @include media(sp) {
+    .header_menu {
+      .text {
+        font-size: $SP_FONT_S;
+      }
+    }
+  }
+}

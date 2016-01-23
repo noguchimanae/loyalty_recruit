@@ -1,0 +1,247 @@
+@charset "utf-8";
+
+// ------------------------------------
+//interview
+// ------------------------------------
+
+.point {
+  dt {
+    color: $COLOR_POINT; 
+  }
+  .oneday {
+    .title {
+      background: $COLOR_POINT;
+    }
+  }
+}
+
+.marketing {
+  dt {
+    color: $COLOR_MARKETING;
+  }
+  .title {
+    background: $COLOR_MARKETING;
+  }
+}
+
+.sales {
+  dt {
+    color: $COLOR_SALES;
+  }
+  .title {
+    background: $COLOR_SALES;
+  }
+}
+
+.interview_inner {
+  width: 610px;
+  margin: 0 auto;
+  
+  @include media(sp) {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.interview_area {
+//  width: 550px;
+  margin: 0 auto 30px;
+  background: $COLOR_MAIN;
+  padding: 30px;
+  position: relative;
+  z-index: 999;
+  
+  @include media(pc_min) {
+    margin: 0 auto;
+  }
+  
+  @include media(sp) {
+    img {
+      width: 100%;
+    }
+  }
+  
+  p {
+    padding-bottom: 30px;
+  }
+  
+  dl {
+    margin-bottom: 40px;
+    
+    dt {
+      font-size: $PC_FONT_L;
+      margin-bottom: 20px;
+    }
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  dd {
+    font-size: $PC_FONT_S;
+    line-height: 1.8;
+  }
+}
+
+.img_area {
+  position: absolute;
+  z-index: 0;
+  
+  @include media(sp) {
+    position: inherit;
+    text-align: center;
+    margin: 0 auto;
+    
+    img {
+//      width: 100%;
+      text-align: center;
+    }
+    
+    @include media(sp) {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  
+  &.img01 {
+    top: 0;
+    left: -110px;
+  }
+  &.img02 {
+    top: 360px;
+    right: -150px;
+  }
+  &.img03 {
+    top: 870px;
+    left: -300px;
+  }
+  &.img04 {
+    top: 1430px;
+    left: -25%;
+    
+    img {
+      width: 150%;
+    }
+      
+    @include media(pc_min) {
+      
+      img {
+        width: 130%;
+      } 
+    }
+    @include media(sp){
+      width: 100%;
+    }
+  }
+  &.img05 {
+    top: 2300px;
+    right: -200px;
+  }
+}
+
+.oneday {
+  position: relative;
+  z-index: 999;
+  background: $COLOR_MAIN;
+  width: 100%;
+  margin: 240px auto 0;
+  
+  .title {
+    padding: 15px 0;
+    text-align: center;
+    color: $COLOR_MAIN;
+    font-size: $PC_FONT_LLL;
+    span {
+      font-size: $PC_FONT_M;
+      display: inline-block;
+      padding-left: 10px;
+    }
+  }
+  .inner {
+    padding: 30px;
+    
+    .line {
+      background: url('/images/works/interview/oneday_line.png') repeat-y;
+      background-position: 28px;
+    }
+    
+    .box {
+      @include clearfix;
+      margin-bottom: 40px;
+      
+      .img {
+        float: left;
+        width: 30%;
+        vertical-align: middle;
+        
+        p {
+          display: inline-block;
+          padding: 5px 0 0 10px;
+          line-height: 1.1;
+          
+          span {
+            font-size: $PC_FONT_LLL;
+          }
+        }
+      }
+      dl {
+        width: auto;
+        margin-left: 33%;
+        
+        dt {
+          font-size: $PC_FONT_M;
+          padding-bottom: 15px;
+        }
+        dd {
+          font-size: $PC_FONT_S;
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  
+  @include media(pc_min) {
+    margin: 230px auto 0;
+  }
+}
+
+.button_interview {
+  width: 100%;
+  margin: 30px auto 0;
+  text-align: center;
+  padding-bottom: 60px;
+  
+  .button {
+    background: $COLOR_MAIN;
+    width: 100%;
+    padding: 0;
+    display: table;
+  }
+  
+  li {
+    display: table-cell;
+    width: 33.3%;
+    border-right: 1px solid $COLOR_LINE;
+    
+    a {
+      display: inline-block;
+      text-align: center;
+      background: $COLOR_MAIN;
+      padding: 15px 0;
+      width: 100%;
+      
+      &.next {
+        background: url('/images/works/interview/button_interview_next.png') no-repeat;
+        background-position: right 20px center;
+      }
+      &.back {
+        background: url('/images/works/interview/button_interview_back.png') no-repeat;
+        background-position: 20px center;
+      }
+    }
+  }
+}

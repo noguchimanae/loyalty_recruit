@@ -1,0 +1,97 @@
+// -------------------------------------------------------------------
+//  mixins.scss
+// -------------------------------------------------------------------
+
+@mixin clearfix {
+  zoom: 1;
+  &:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+}
+
+@mixin media($mediaSize) {
+  @if $mediaSize == pc_min {
+    // PC用
+    @media screen and (max-width: $BREAK_POINT_PC) {
+      @content;
+    }
+  } @else if $mediaSize == pc {
+    // PC用 min
+    @media screen and (min-width: $BREAK_POINT_SP) {
+      @content;
+    }
+  } @else if $mediaSize == sp {
+    // SP用
+    @media screen and (max-width: $BREAK_POINT_SP) {
+      @content;
+    }
+  } @else if $mediaSize == landscape {
+    @media only screen and (orientation: landscape) {
+      @content;
+    }
+  }
+}
+
+// -------------------------------------------------------------------
+//  borderRadius
+// -------------------------------------------------------------------
+
+@mixin borderRadiuscate {
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -o-border-radius: 50px;
+  -ms-border-radius: 50px;
+}
+
+// -------------------------------------------------------------------
+//  shadow
+// -------------------------------------------------------------------
+
+@mixin shadowButton {
+  box-shadow: rgba(36, 36, 36, 0.2) 0px 1px 3px 1px;
+  -webkit-box-shadow: rgba(36, 36, 36, 0.2) 0px 1px 3px 1px;
+  -moz-box-shadow: rgba(36, 36, 36, 0.2) 0px 1px 3px 1px;
+  -o-box-shadow: rgba(36, 36, 36, 0.2) 0px 1px 3px 1px;
+  -ms-box-shadow: rgba(36, 36, 36, 0.2) 0px 1px 3px 1px;
+}
+
+@mixin shadowtopicpath {
+  box-shadow: rgba(36, 36, 36, 0.1) 0px 0px 1px 0px;
+  -webkit-box-shadow: rgba(36, 36, 36, 0.1) 0px 0px 1px 0px;
+  -moz-box-shadow: rgba(36, 36, 36, 0.1) 0px 0px 1px 0px;
+  -o-box-shadow: rgba(36, 36, 36, 0.1) 0px 0px 1px 0px;
+  -ms-box-shadow: rgba(36, 36, 36, 0.1) 0px 0px 1px 0px;
+}
+
+
+// -------------------------------------------------------------------
+//  opacity
+// -------------------------------------------------------------------
+
+@mixin BTNOPACITY {
+  opacity: 0.67;
+  -webkit-opacity: 0.67;
+  -moz-opacity: 0.67;
+  -o-opacity: 0.67;
+  -ms-opacity: 0.67;
+}
+
+@mixin BASEOPACITY {
+  opacity: 0.75;
+  -webkit-opacity: 0.75;
+  -moz-opacity: 0.75;
+  -o-opacity: 0.75;
+  -ms-opacity: 0.75;
+}
+
+// -------------------------------------------------------------------
+//  transition
+// -------------------------------------------------------------------
+
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  transition: $transition;
+}

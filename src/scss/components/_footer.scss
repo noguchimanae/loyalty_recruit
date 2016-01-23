@@ -1,0 +1,101 @@
+//--------------------------------------------
+//footer
+//--------------------------------------------
+
+footer {
+  padding-top: 40px;
+
+  .footer_box {
+    border-top: 1px solid $COLOR_LINE;
+  }
+
+  .footer_inner {
+    position: relative;
+    @include clearfix;
+    width: $SITE_WIDTH;
+    margin: 0 auto;
+
+    nav {
+      @include clearfix;
+      padding: 10px 0;
+
+      ul {
+        width: 600px;
+        float: left;
+        padding-top: 10px;
+        
+        li {
+          display: inline-block;
+        }
+        a {
+          font-weight: normal;
+          font-size: $PC_FONT_SSS;
+        }
+      }
+    }
+    @include media(pc_min) {
+      width: 94%;
+      text-align: center;
+      
+      nav {
+        ul {
+          width: 95%;
+          margin: 0 auto;
+          float: none;
+          text-align: center;
+          
+          li {
+            padding-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .copy {
+//    @include clearfix;
+    background: $COLOR_SUB;
+    padding: 15px 0;
+    
+    .footer_inner {
+      @include clearfix;
+      
+      .sns {
+        @include clearfix;
+        float: left;
+        
+        li {
+          float: left;
+        }
+        
+        .fb {
+          margin-left: 10px;
+        }
+        @include media(pc_min) {
+          float: none;
+          margin: 0 auto 10px;
+          text-align: center;
+          width: 190px;
+          
+          .fb {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+    span {
+      float: right;
+      font-size: $PC_FONT_SSS;
+      
+      @include media(pc_min) {
+        float: none;
+        text-align: center;
+      }
+      @include media(sp) {
+        float: none;
+        font-size: $SP_FONT_SSS;
+      }
+    }
+    
+  }
+}

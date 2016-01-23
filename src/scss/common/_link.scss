@@ -1,0 +1,22 @@
+a {
+  color: $COLOR_LINK;
+  text-decoration: none!important;
+  display: inline-block;
+  
+  &:link {
+    color: $COLOR_LINK;
+  }
+  &:visited {
+    color: $COLOR_LINK_VISITED;
+  }
+  &:hover {
+    @include BASEOPACITY;
+    color: $COLOR_LINK_HOVER;
+  }
+  &:active {
+    color: $COLOR_LINK_ACTIVE;
+  }
+  &:focus {
+    color: $COLOR_LINK_FOCUS;
+  }
+}

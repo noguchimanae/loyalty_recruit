@@ -1,0 +1,92 @@
+// -------------------------------------------------------------------
+//  structure.scss
+// -------------------------------------------------------------------
+
+html {
+  font-size: $FONT_SIZE;
+  height: 100%;
+  background: $COLOR_MAIN;
+}
+
+body {
+  font-size: $PC_FONT_SS;
+  font-family: $FONT_FAMILY;
+  background: $COLOR_MAIN;
+  color: $COLOR_TEXT;
+  line-height: $LINE_HEIGHT;
+}
+
+.content_base {
+  width: $SITE_WIDTH;
+  margin: 0 auto;
+  position: relative;
+  
+  @include media(pc_min) {
+    width: 100%;
+  }
+}
+
+.pt10 {padding-top: 10px;}
+.pt20 {padding-top: 20px;}
+.pt30 {padding-top: 30px;}
+.pt40 {padding-top: 40px;}
+.pt50 {padding-top: 50px;}
+
+.pb10 {padding-bottom: 10px;}
+.pb20 {padding-bottom: 20px;}
+.pb30 {padding-bottom: 30px;}
+.pb40 {padding-bottom: 40px;}
+.pb50 {padding-bottom: 50px;}
+
+.mt10 {margin-top: 10px;}
+.mt20 {margin-top: 20px;}
+.mt30 {margin-top: 30px;}
+.mt40 {margin-top: 40px;}
+.mt50 {margin-top: 50px;}
+
+.mt100 {margin-top: 100px!important;}
+.mt120 {margin-top: 120px!important;}
+.mt140 {margin-top: 140px!important;}
+.mt160 {margin-top: 160px!important;}
+.mt180 {margin-top: 180px!important;}
+.mt200 {margin-top: 200px!important;}
+.mt220 {margin-top: 220px!important;}
+.mt240 {margin-top: 240px!important;}
+.mt260 {margin-top: 260px!important;}
+
+
+.mb10 {margin-bottom: 10px;}
+.mb20 {margin-bottom: 20px;}
+.mb30 {margin-bottom: 30px;}
+.mb40 {margin-bottom: 40px;}
+.mb50 {margin-bottom: 50px;}
+
+
+
+.sp {
+  display: none;
+}
+
+.pc {
+  display: block;
+}
+
+@include media(pc_min) {
+  .sp {
+    display: block;
+  }
+  
+  .pc {
+    display: none;
+  }
+}
+
+@include media(sp) {
+  .sp {
+    display: block;
+  }
+
+  .pc {
+    display: none;
+  }
+}

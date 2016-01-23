@@ -1,0 +1,40 @@
+@charset "utf-8";
+// -------------------------------------------------------------------
+//  .topicpath 
+// -------------------------------------------------------------------
+
+.topicpath {
+  @include shadowtopicpath;
+  width: 100%;
+  background: $COLOR_MAIN;
+  border-bottom: 1px solid $COLOR_LINE;
+  
+  ul {
+    width: 980px;
+    margin: 0 auto;
+    padding: 20px 0;
+    
+    li {
+      display: inline-block;
+      padding-right: 12px;
+      margin-right: 5px;
+      background: url('/images/common/topicpath_right.png') center right no-repeat;
+      font-size: $PC_FONT_SSS;
+      
+      &:last-child {
+        background: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      &.active {
+          color: $COLOR_LINK_ACTIVE;
+      }
+    }
+  }
+  @include media(pc_min) {
+    ul {
+      width: 94.5%;
+    }
+  }
+}

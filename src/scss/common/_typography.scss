@@ -1,0 +1,17 @@
+h2 {
+  font-size: $PC_FONT_LLL;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 50px;
+  
+  @include media(pc_min) {
+    font-size: $PC_FONT_LLL;
+    margin-bottom: 20px;
+    padding-top: 40px;
+  }
+
+  @include media(sp) {
+    font-size: $SP_FONT_LL;
+  }
+}

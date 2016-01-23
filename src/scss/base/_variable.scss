@@ -1,0 +1,71 @@
+// ------------------------------------
+// Size
+// ------------------------------------
+$SITE_WIDTH: 980px;
+
+// ------------------------------------
+// Mediaquery
+// ------------------------------------
+//$BREAK_POINT_PC: 'only screen and (min-width: 1180px)';
+//$BREAK_POINT_TABLET: 'only screen and (max-width: 880px)' ;
+//$BREAK_POINT_SP: 'only screen and (max-width: 640px)';
+
+$BREAK_POINT_PC: 1180px;
+$BREAK_POINT_TABLET: 880px;
+$BREAK_POINT_SP: 640px;
+
+// ------------------------------------
+// Font
+// ------------------------------------
+$FONT_SIZE: 62.5%;
+
+//PC
+$PC_FONT_SSS: 1.2rem;
+$PC_FONT_SS: 1.3rem;
+$PC_FONT_S: 1.5rem;
+$PC_FONT_M: 1.6rem;
+$PC_FONT_L: 1.8rem;
+$PC_FONT_LL: 2.2rem;
+$PC_FONT_LLL: 3.0rem;
+
+//SP
+$SP_FONT_SSS: 0.9rem;
+$SP_FONT_SS: 1.0rem;
+$SP_FONT_S: 1.2rem;
+$SP_FONT_M: 1.4rem;
+$SP_FONT_L: 1.6rem;
+$SP_FONT_LL: 1.7rem;
+$SP_FONT_LLL: 2.0rem;
+
+$FONT_FAMILY: YuGothic, '游ゴシック', 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+$LINE_HEIGHT: 1.5;
+
+// ------------------------------------
+// Color
+// ------------------------------------
+$COLOR_TEXT: #303030;
+$COLOR_TEXT_SUB: #9e9e9e;
+$COLOR_MAIN: #ffffff;
+$COLOR_SUB: #eeeeee;
+
+$COLOR_LINK: #303030;
+$COLOR_LINK_VISITED: #303030;
+$COLOR_LINK_HOVER: #ff391f;
+$COLOR_LINK_ACTIVE: #ff391f;
+$COLOR_LINK_FOCUS: #ff391f;
+
+$COLOR_LINE: #ebebeb;
+
+$COLOR_ORANGE: #ff661b;
+$COLOR_GREEN: #19a62d;
+$COLOR_PURPLE: #8562d3;
+$COLOR_BLUE: #1b8cff;
+
+$COLOR_TEXT_MINTGREEN: #1b8cff;
+
+$COLOR_BTN_ENTRY: #ff391f;
+$COLOR_TEXT_ENTRY: #ffffff;
+
+$COLOR_POINT: #f89f2d;
+$COLOR_MARKETING: #2bcaaa;
+$COLOR_SALES: #60aefd;
