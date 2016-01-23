@@ -4,6 +4,12 @@
 //interview
 // ------------------------------------
 
+section.sub {
+  .content_base {
+    padding-top: 30px;
+  }
+}
+
 .point {
   dt {
     color: $COLOR_POINT; 
@@ -207,6 +213,39 @@
   @include media(pc_min) {
     margin: 230px auto 0;
   }
+  @include media(sp){
+    margin: 0 auto;
+    
+    .title {
+      font-size: $SP_FONT_LLL;
+      font-weight: bold;
+      span {
+        font-size: $SP_FONT_M;
+      }
+    }
+    
+    .inner {
+      .line {
+        .box {
+          .img {
+            p {
+              padding: 10px 0 15px;
+              background: $COLOR_MAIN;
+              span {
+                font-size: $SP_FONT_LLL;
+              }
+            }
+          }
+          
+          dl {
+            dt {
+              padding-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .button_interview {
@@ -214,6 +253,10 @@
   margin: 30px auto 0;
   text-align: center;
   padding-bottom: 60px;
+  
+  br {
+    display: none;
+  }
   
   .button {
     background: $COLOR_MAIN;
@@ -226,6 +269,7 @@
     display: table-cell;
     width: 33.3%;
     border-right: 1px solid $COLOR_LINE;
+    vertical-align: middle;
     
     a {
       display: inline-block;
@@ -242,6 +286,11 @@
         background: url('/images/works/interview/button_interview_back.png') no-repeat;
         background-position: 20px center;
       }
+    }
+  }
+  @include media(sp){
+    br {
+      display: block;
     }
   }
 }

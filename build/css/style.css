@@ -1137,6 +1137,9 @@ footer {
       .index .main_visual ul li a img {
         width: 100%; }
 
+section.sub .content_base {
+  padding-top: 30px; }
+
 .point dt {
   color: #f89f2d; }
 
@@ -1275,12 +1278,29 @@ footer {
   @media screen and (max-width: 1180px) {
     .oneday {
       margin: 230px auto 0; } }
+  @media screen and (max-width: 640px) {
+    .oneday {
+      margin: 0 auto; }
+      .oneday .title {
+        font-size: 2rem;
+        font-weight: bold; }
+        .oneday .title span {
+          font-size: 1.4rem; }
+      .oneday .inner .line .box .img p {
+        padding: 10px 0 15px;
+        background: #ffffff; }
+        .oneday .inner .line .box .img p span {
+          font-size: 2rem; }
+      .oneday .inner .line .box dl dt {
+        padding-bottom: 10px; } }
 
 .button_interview {
   width: 100%;
   margin: 30px auto 0;
   text-align: center;
   padding-bottom: 60px; }
+  .button_interview br {
+    display: none; }
   .button_interview .button {
     background: #ffffff;
     width: 100%;
@@ -1289,7 +1309,8 @@ footer {
   .button_interview li {
     display: table-cell;
     width: 33.3%;
-    border-right: 1px solid #ebebeb; }
+    border-right: 1px solid #ebebeb;
+    vertical-align: middle; }
     .button_interview li a {
       display: inline-block;
       text-align: center;
@@ -1302,3 +1323,6 @@ footer {
       .button_interview li a.back {
         background: url("/images/works/interview/button_interview_back.png") no-repeat;
         background-position: 20px center; }
+  @media screen and (max-width: 640px) {
+    .button_interview br {
+      display: block; } }
