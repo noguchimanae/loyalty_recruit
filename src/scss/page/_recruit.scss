@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+// ------------------------------------
+//recruit
+// ------------------------------------
+.flow {
+  width: 80%;
+  margin: 0 auto;
+  
+  li {
+    display: inline-block;
+    width: 24%;
+    margin: 0 auto;
+//    min-height: 63px;
+    text-align: center;
+    vertical-align: middle;
+    color: $COLOR_MAIN;
+    font-size: $PC_FONT_S;
+    padding: 42px 0;
+    
+    &.flow_entry {
+      background: url('/images/recruit/flow_01.png') no-repeat;
+      background-size: contain;
+      background-position: center center;
+    }
+    
+    &.flow_briefing {
+      background: url('/images/recruit/flow_02.png') no-repeat;
+      background-size: contain;
+      background-position: center center;
+    }
+    
+    &.flow_test {
+      background: url('/images/recruit/flow_03.png') no-repeat;
+      background-size: contain;
+      background-position: center center;
+      padding: 42px 0;
+    }
+    &.flow_decision {
+      background: url('/images/recruit/flow_04.png') no-repeat;
+       background-size: contain;
+      background-position: center center;
+    }
+  }
+  
+  @include media(pc_min) {
+    width: 80%;
+    
+    li {
+      padding: 20px 0;
+      
+      &.flow_test {
+        padding: 15px 0;
+      }
+    }
+  }
+  
+  @include media(sp) {
+    width: 100%;
+    
+    li {
+      font-size: $SP_FONT_SSS;
+      font-weight: bold;
+      padding: 12px 0;
+      min-height: inherit;
+      
+      &.flow_test {
+        padding: 6px 0;
+      }
+    }
+  }
+  
+  @include media(landscape) {
+    width: 60%;
+  }
+}
+
+.faq {
+  font-size: $PC_FONT_M;
+  
+  li {
+    margin-bottom: 10px;
+    
+    .inner {
+      padding: 10px 10px 20px 10px;
+      
+//      p {
+//        padding: 20px;
+//        display: inline-block;
+//      }
+    }
+    .child {
+      display: none;
+    }
+  }
+  
+  .toggle {
+    padding: 15px 0;
+    width: 100%;
+    background: $COLOR_SUB url('/images/common/arrow_bottom.png') no-repeat;
+    background-position: center right 20px;
+    font-size: $PC_FONT_S;
+    1
+    
+    span {
+      color: $COLOR_TEXT_SUB;
+      font-size: $PC_FONT_LL;
+      vertical-align: middle;
+      display: inline-block;
+      padding-right: 5px;
+    }
+    
+    .inner {
+      padding: 0 60px 0 10px;
+    }
+  }
+  @include media(sp) {
+    font-size: $SP_FONT_M;
+    
+    .toggle {
+      font-size: $SP_FONT_S;
+      
+      span {
+        font-size: $SP_FONT_LL;
+        padding-right: 5px;
+      }
+    }
+  }
+}
+
+
+
+.toggle.active {
+  background: $COLOR_SUB url('/images/common/arrow_top.png') no-repeat;
+  background-position: center right 20px;
+}

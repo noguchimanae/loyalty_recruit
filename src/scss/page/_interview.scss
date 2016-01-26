@@ -10,6 +10,15 @@ section.sub {
   }
 }
 
+.interview_page {
+  
+  .content_base {
+    @include media(pc_min) {
+      width: 100%;
+    }
+  }
+}
+
 .point {
   dt {
     color: $COLOR_POINT; 
@@ -279,11 +288,11 @@ section.sub {
       width: 100%;
       
       &.next {
-        background: url('/images/works/interview/button_interview_next.png') no-repeat;
+        background: url('/images/common/arrow_right.png') no-repeat;
         background-position: right 20px center;
       }
       &.back {
-        background: url('/images/works/interview/button_interview_back.png') no-repeat;
+        background: url('/images/common/arrow_left.png') no-repeat;
         background-position: 20px center;
       }
     }

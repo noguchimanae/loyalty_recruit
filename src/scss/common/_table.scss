@@ -1,0 +1,61 @@
+table {
+  border: 1px solid $COLOR_LINE;
+  tr {
+    font-size: $PC_FONT_M;
+    
+    th {
+      width: 30%;
+      padding: 20px;
+      text-align: left;
+      border-right: 1px solid $COLOR_LINE;
+      font-weight: normal;  
+    }
+    td {
+      width: auto;
+      padding: 20px;
+    }
+    
+    &:nth-child(2n) {
+      background: $COLOR_SUB_LIGHT;
+    }
+  }
+  @include media(sp) {
+    tr {
+      font-size: $SP_FONT_M;
+      th {
+        font-size: $SP_FONT_S;
+      }
+      
+      td {
+        line-height: 1.6;
+      }
+    }
+  }
+}
+
+.environment {
+  table {
+    tr {
+      background: $COLOR_SUB_LIGHT;
+      &:nth-child(2n) {
+        background: $COLOR_MAIN;
+      }
+    }
+  }
+}
+
+.ojt_box {
+  
+  .inner {
+    padding: 20px;
+  }
+  
+  li {
+    list-style-type: decimal;
+    margin-left: 10px;
+    font-size: $PC_FONT_S;
+    @include media(sp) {
+      font-size: $SP_FONT_M;
+    }
+  }
+}

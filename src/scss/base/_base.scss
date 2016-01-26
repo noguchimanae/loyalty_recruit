@@ -22,9 +22,29 @@ body {
   position: relative;
   
   @include media(pc_min) {
-    width: 100%;
+    width: 94.5%;
+    margin: 0 auto;
+  }
+//  
+//  @include media(sp) {
+//    width: 94.5%;
+//    margin: 0 auto;
+//  }
+}
+
+section {
+  border-top: 1px solid $COLOR_LINE;
+  padding-bottom: 60px;
+  
+  &:first-child {
+    border-top: none;
+  }
+  
+  &:last-child {
+    padding-bottom: 0!important;
   }
 }
+
 
 .pt10 {padding-top: 10px;}
 .pt20 {padding-top: 20px;}
@@ -37,6 +57,10 @@ body {
 .pb30 {padding-bottom: 30px;}
 .pb40 {padding-bottom: 40px;}
 .pb50 {padding-bottom: 50px;}
+.pb60 {padding-bottom: 60px;}
+.pb70 {padding-bottom: 70px;}
+.pb80 {padding-bottom: 80px;}
+.pb90 {padding-bottom: 90px;}
 
 .mt10 {margin-top: 10px;}
 .mt20 {margin-top: 20px;}
