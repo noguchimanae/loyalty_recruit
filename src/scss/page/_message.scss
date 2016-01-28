@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+// ------------------------------------
+//message
+// ------------------------------------
+.message {
+  .content_base {
+    @include clearfix;
+    width: 60%;
+    
+    @include media(sp) {
+      width: 94.5%;
+    }
+    
+    p {
+      font-size: $PC_FONT_M;
+      line-height: 2;
+    }
+    
+    .sign {
+      background: url('/images/common/sign.png') bottom no-repeat;
+      background-size: contain;
+      width: 160px;
+      height: 40px;
+      float: right;
+      margin-top: 20px;
+      padding-bottom: 30px;
+      font-size: $PC_FONT_SS;
+    }
+  }
+}

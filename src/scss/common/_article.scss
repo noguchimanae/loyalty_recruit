@@ -243,6 +243,9 @@
       
       a {
         width: 225px;
+        @include media(pc_min) {
+          width: 100%;
+        }
       }
     }
   }

@@ -9,5 +9,254 @@
     .text {
       text-align: center;
     }
+    .figure {
+      
+      .box_left {
+        width: 72%;
+        vertical-align: middle;
+        display: inline-block;
+        
+        @include media(sp) {
+          width: 100%;
+          vertical-align: top;
+        }
+      } 
+      .box_right {
+        width: 24%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 3%;
+        
+        @include media(sp) {
+          width: 100%;
+          vertical-align: top;
+          margin-top: 20px;
+          margin-left: 0;
+        }
+      }
+      
+      .opt {
+        width: 100%;
+        text-align: center;
+        border: 1px solid $COLOR_LINE;
+        margin-bottom: 20px;
+      }
+      
+      p {
+        font-size: $PC_FONT_SS;
+      }
+      
+      .inner {
+        padding: 10px;
+      }
+      
+      .job {
+        color: $COLOR_MAIN;
+        
+        &.des,
+        &.cate {
+          color: $COLOR_MAIN;
+        }
+        
+        &.cate {
+          padding-bottom: 10px;
+          font-size: $PC_FONT_M;
+          font-weight: bold;
+        }
+        
+        &.des {
+          font-size: $PC_FONT_SS;
+          padding-bottom: 10px;
+          line-height: 1.4;
+          
+          @include media(pc_min) {
+            br {
+              display: none;
+            }
+          }
+        }
+        
+        &.interview {
+          color: $COLOR_TEXT;
+          background: $COLOR_MAIN;
+          width: 100%;
+          
+          .head {
+            color: $COLOR_TEXT;
+            font-size: $PC_FONT_SS;
+            padding: 10px 0;
+            border: 1px solid $COLOR_LINE;
+          }
+          
+          .inner {
+            font-weight: bold;
+            
+            .img {
+              display: inline-block;
+              width: 55px;
+              text-align: left;
+              padding-right: 10px;
+              vertical-align: middle;
+
+              img {
+                width: 100%;
+              }
+              
+              @include media(pc_min) {
+                margin: 0 auto;
+                display: block;
+                padding-bottom: 5px;
+              }
+              
+              @include media(sp) {
+                display: inline-block;
+                width: 55px;
+              }
+            }
+            .name {
+              display: inline-block;
+              color: $COLOR_TEXT;
+              font-size: $PC_FONT_S;
+              padding-right: 20px;
+              background: url('/images/common/arrow_right.png') center right no-repeat;
+            }
+          }
+        }
+      }
+      
+      .point {
+        background: lighten( $COLOR_POINT, 35%);
+        padding: 10px;
+        position: relative;
+        
+        .arrow {
+          background: url('/images/works/works_arrow_01.png') bottom center no-repeat;
+          width: 40px;
+          height: 60px;
+          position: absolute;
+          bottom: -47px;
+          right: 0;
+          left: 0;
+          margin: auto;
+          
+          @include media(sp){
+            display: none;
+          }
+        }
+        
+        .base_arrow {
+          background: url('/images/works/point_arrow.png') top center no-repeat;
+          position: absolute;
+          width: 80px;
+          height: 40px;
+          left: 0;
+          right: 0;
+          top: -25px;
+          margin: auto;
+        }
+        
+        li {
+          background: $COLOR_POINT;
+        }
+        
+        p {
+          color: $COLOR_POINT;
+        }
+      }
+      
+      .marketing {
+        background: lighten( $COLOR_MARKETING, 43%);
+        padding: 10px;
+        
+        li {
+          background: $COLOR_MARKETING;
+        }
+
+        p {
+          color: $COLOR_MARKETING;
+        }
+      }
+      
+      .sales {
+        background: lighten( $COLOR_SALES, 25%);
+        padding: 10px;
+        position: relative;
+        
+        .arrow_01 {
+          background: url('/images/works/works_arrow_02.png') bottom center no-repeat;
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          left: -36px;
+          top: 70px;
+          
+          @include media(sp){
+            display: none;
+          }
+        }
+        
+        .arrow_02 {
+          background: url('/images/works/works_arrow_03.png') bottom center no-repeat;
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          left: -36px;
+          bottom: 90px;
+          
+          @include media(sp){
+            display: none;
+          }
+        }
+        
+        .base_arrow {
+          background: url('/images/works/sales_arrow.png') top center no-repeat;
+          position: absolute;
+          width: 80px;
+          height: 40px;
+          left: 0;
+          right: 0;
+          top: -25px;
+          margin: auto;
+        }
+        
+        li {
+          background: $COLOR_SALES;
+          width: 100%;
+          &:first-child {
+            margin-bottom: 10px;
+          }
+          
+        }
+        p {
+          color: $COLOR_SALES;
+        }
+      }
+      
+      ul {
+        
+        li {
+          width: 31.7%;
+          display: inline-block;
+          text-align: center;
+          margin-right: 1.6%;
+          
+          &:last-child {
+            margin-right: 0;
+          }
+          
+          @include media(sp) {
+            margin-bottom: 10px;
+          }
+          
+          a {
+            width: 100%;
+            display: inline-block;
+          }
+          @include media(sp) {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
-}　
+}

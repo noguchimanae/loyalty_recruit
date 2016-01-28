@@ -27,4 +27,11 @@ a {
     color: $COLOR_LINK;
     text-decoration: underline;
   }
+  
+  @include media(sp) {
+    font-size: $SP_FONT_M;
+    p {
+      font-size: $SP_FONT_M;
+    }
+  }
 }

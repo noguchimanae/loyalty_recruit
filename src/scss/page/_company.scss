@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+// ------------------------------------
+//company
+// ------------------------------------
+.company {  
+  .content_base {
+    ul {
+      width: 100%;
+
+      li {
+        display: inline-block;
+        width: 31.5%;
+        margin-right: 2%;
+        
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          width: 100%;
+          display: inline-block;
+          padding: 15px 0;
+          text-align: center;
+          background: $COLOR_SUB url('/images/common/arrow_right.png') center right 15px no-repeat;
+        }
+        @include media(sp){
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    
+    p {
+      a {
+        background: url('/images/common/arrow_right.png') left center no-repeat;
+        padding-left: 20px;
+      }
+      @include media(pc_min){
+        padding-bottom: 30px;
+      }
+      @include media(sp){
+        padding-bottom: 30px;
+      }
+    }
+    .about {
+      margin: 0 auto;
+      width: 40%;
+      
+      @include media(sp){
+        width: 100%;
+      }
+      
+      a {
+        display: inline-block;
+        text-align: center;
+        background: url('/images/company/graph.png') no-repeat;
+        background-size: cover;
+        border: 1px solid $COLOR_LINE;
+        width: 100%;
+        
+        p {
+          padding-bottom: 0;
+          
+          &.img {
+            width: 30%;
+            
+            img {
+              width: 100%;
+            }
+          }
+          &.text {
+            background: url('/images/common/arrow_right.png') center right 20px no-repeat;
+            padding: 20px;
+            font-weight: bold;
+          }
+        }
+
+        
+      }
+    }
+  }
+}

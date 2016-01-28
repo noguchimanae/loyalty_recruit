@@ -6,6 +6,9 @@
 
 p {
   font-size: $PC_FONT_M;
+  @include media(sp){
+    font-size: $SP_FONT_M;
+  }
 }
 
 .flow {
@@ -82,6 +85,7 @@ p {
 
 .faq {
   font-size: $PC_FONT_M;
+
   
   li {
     margin-bottom: 10px;
@@ -89,13 +93,15 @@ p {
     .inner {
       padding: 10px 10px 20px 10px;
       
-//      p {
-//        padding: 20px;
-//        display: inline-block;
-//      }
+      @include media(sp) {
+        font-size: $SP_FONT_M;
+        line-height: 1.4;
+      }
+      
     }
     .child {
       display: none;
+      line-height: 1.5;
     }
   }
   
@@ -116,6 +122,10 @@ p {
     
     .inner {
       padding: 0 60px 0 10px;
+    }
+    
+    p.inner {
+      font-weight: bold;
     }
   }
   @include media(sp) {
