@@ -1,0 +1,39 @@
+{% extends "layout/_base.html" %}
+
+{% block title %}
+{% endblock %}
+
+{% block js %}
+<script src="/js/page.js"></script>
+<script src="/js/jquery.heightLine.js"></script>
+{% endblock %}
+
+{% block extra_css %}
+{% endblock %}
+
+{% block body %}
+<div class="environment">
+  <div class="main_visual">
+    <img src="/images/index/main_v01.png" alt="" class="contents_visual">
+  </div>
+  <div class="topicpath">
+    <ul>
+      <li><a href="../">ホーム</a></li>
+      <li class="active">会社を知る</li>
+    </ul>
+  </div>
+
+  <section class="main">
+    <div class="content_base">
+      <h2>会社を知る</h2>
+      <ul>
+        <li><a href="http://www.loyalty.co.jp/company#summary" target="_blank">会社概要</a></li>
+        <li><a href="http://www.loyalty.co.jp/company#philosophy" target="_blank">会社理念</a></li>
+        <li><a href="http://www.loyalty.co.jp/company#summary" target="_blank">沿革</a></li>
+      </ul>
+    </div>
+  </section>
+
+</div>
+
+{% endblock %}

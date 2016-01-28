@@ -5,7 +5,7 @@
 // ------------------------------------
 .system {
   .t_orange {
-    color: $COLOR_ENVI;
+    color: $COLOR_ENVI!important;
   }
   .t_white {
     color: $COLOR_MAIN;
@@ -29,11 +29,11 @@
 
   .inner {
     padding: 10px;
-  }
-
-  span {
-    font-size: $PC_FONT_SSS;
-    line-height: inherit;
+    
+    span {
+      font-size: $PC_FONT_SSS;
+      line-height: inherit;
+    }
   }
   
   .list {
@@ -204,6 +204,10 @@
   .evaluation_box {
     display: table;
     
+    span {
+      font-size: $PC_FONT_M;
+    }
+    
     .large_box01 {
       display: table-cell;
       width: 45%;
@@ -326,7 +330,7 @@
         background: url('/images/environment/flow_01.png') no-repeat;
         background-size: contain;
         background-position: center center;
-        color: $COLOR_ORANGE;
+        color: $COLOR_ENVI;
       }
       
       .flow_02 {
@@ -352,7 +356,178 @@
         background-size: contain;
         background-position: center center;
       }
-      
     }
+    
+    .inner {
+      color: $COLOR_MAIN;
+      font-size: $PC_FONT_SS;
+      text-align: center;
+    }
+    
+    .large_box01,
+    .large_box02 {
+      display: table-cell;
+//      background: $COLOR_SUB_LIGHT;
+      @include media(pc_min) {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+    
+    .large_box01 {
+      width: 84%;
+      padding-right: 1%;
+      
+      .medium_box01 {
+        width: 24%;
+        display: table-cell;
+        background: $COLOR_SUB_LIGHT;
+        text-align: center;
+        padding-right: 1%;
+        
+        .inner {
+          vertical-align: middle;
+          display: inline-block;
+          width: 100%;
+          padding: 20px 0;
+          font-size: $PC_FONT_SS;
+        }
+      }
+    }
+    
+    .medium_box01 {
+      font-size: $PC_FONT_S;
+      background: $COLOR_SUB_LIGHT;
+
+      &.flow_01 {
+        .inner {
+          background: $COLOR_FLOW01;
+//          padding: 10px 0;
+        }
+      }
+
+      &.flow_02 {
+        .inner {
+          background: $COLOR_FLOW02;
+        }
+      }
+
+      &.flow_03 {
+        .inner {
+          background: $COLOR_FLOW03;
+        }
+      }
+
+      &.flow_04 {
+        .inner {
+          background: $COLOR_FLOW04;
+        }
+      }
+
+      &.flow_05 {
+        .inner {
+          background: $COLOR_FLOW05;
+        }
+      }
+    }
+    .box_inner {
+      background: $COLOR_SUB_LIGHT;
+      padding: 10px;
+      border: 1px solid $COLOR_LINE;
+
+    }
+    
+    .large_box02 {
+      width: auto;
+    }
+    
+    .large_box03 {
+      @include clearfix;
+      width: 81%;
+      
+      
+      .box_inner {
+        width: 70%;
+        float: right;
+      }
+      
+      .medium_box01 {
+        display: table-cell;
+        width: 30%;
+        
+        &:first-child {
+          padding-right: 2%;
+        } 
+      }
+    }
+    
+    @include media(pc_min) {
+      .large_box01,
+      .large_box02,
+      .large_box03 {
+        width: 100%;
+        font-size: $SP_FONT_SS;
+        .flow_04 {
+          .inner {
+//            padding: 20px 0;
+            vertical-align: middle;
+          }
+        }
+      }
+      
+      .pc {
+        display: none!important;
+      }
+      
+      .large_box03 {
+       
+        
+        .box_inner {
+          width: auto;
+          float: none;
+        }
+      }
+    }
+    @include media(sp) {
+      .large_box01,
+      .large_box02,
+      .large_box03 {
+        width: 100%;
+        font-size: $SP_FONT_SSS;
+      }
+      .large_box01 {
+        
+        &.flow_01 {
+          .inner {
+            min-height: 40px;
+            padding: 0 10px;
+          }
+        }
+        .inner {
+          min-height: 40px;
+          padding: 10px;
+        }
+          
+        
+        .flow_04 {
+          .inner {
+          }
+        }
+      }
+      
+      .large_box03 {
+        .flow_04 {
+          .inner {
+//            padding: 20px 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.photo {
+  li {
+    width: 30%;
   }
 }

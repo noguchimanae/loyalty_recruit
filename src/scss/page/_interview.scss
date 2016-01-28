@@ -4,17 +4,16 @@
 //interview
 // ------------------------------------
 
-section.sub {
-  .content_base {
-    padding-top: 30px;
-  }
-}
-
 .interview_page {
   
   .content_base {
     @include media(pc_min) {
       width: 100%;
+    }
+  }
+  section.sub {
+    .content_base {
+      padding-top: 30px;
     }
   }
 }

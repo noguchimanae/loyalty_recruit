@@ -27,6 +27,10 @@
         margin: 0;
       }
       
+      a {
+        font-size: $PC_FONT_SSS;
+      }
+      
       &.active {
           color: $COLOR_LINK_ACTIVE;
       }
