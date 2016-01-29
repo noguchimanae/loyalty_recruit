@@ -2291,28 +2291,27 @@ footer {
   margin: 0 auto;
   width: 100%; }
   .system .childcare_box .flow li {
-    width: 19%; }
+    width: 19%;
+    vertical-align: top; }
     @media screen and (max-width: 640px) {
       .system .childcare_box .flow li {
         width: 18.6%; } }
-  .system .childcare_box .flow .flow_01 {
+  .system .childcare_box .flow .flow_01 .title {
     background: url("/images/environment/flow_01.png") no-repeat;
     background-size: contain;
     background-position: center center;
     color: #f59e2e; }
-  .system .childcare_box .flow .flow_02 {
-    background: url("/images/environment/flow_02.png") no-repeat;
-    background-size: contain;
+  .system .childcare_box .flow .flow_02 .title {
     background-position: center center; }
-  .system .childcare_box .flow .flow_03 {
+  .system .childcare_box .flow .flow_03 .title {
     background: url("/images/environment/flow_03.png") no-repeat;
     background-size: contain;
     background-position: center center; }
-  .system .childcare_box .flow .flow_04 {
+  .system .childcare_box .flow .flow_04 .title {
     background: url("/images/environment/flow_04.png") no-repeat;
     background-size: contain;
     background-position: center center; }
-  .system .childcare_box .flow .flow_05 {
+  .system .childcare_box .flow .flow_05 .title {
     background: url("/images/environment/flow_05.png") no-repeat;
     background-size: contain;
     background-position: center center; }

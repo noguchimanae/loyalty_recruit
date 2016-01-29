@@ -320,6 +320,7 @@
       
       li {
         width: 19%;
+        vertical-align: top;
         
         @include media(sp) {
           width: 18.6%;
@@ -327,34 +328,45 @@
       }
       
       .flow_01 {
-        background: url('/images/environment/flow_01.png') no-repeat;
-        background-size: contain;
-        background-position: center center;
-        color: $COLOR_ENVI;
+        .title {
+          background: url('/images/environment/flow_01.png') no-repeat;
+          
+          background-size: contain;
+          background-position: center center;
+          color: $COLOR_ENVI;
+        }
       }
       
       .flow_02 {
-        background: url('/images/environment/flow_02.png') no-repeat;
-        background-size: contain;
-        background-position: center center;
+        .title {
+//          background: url('/images/environment/flow_02.png') no-repeat;
+//          background-size: contain;
+          background-position: center center;
+        }
       }
       
       .flow_03 {
-        background: url('/images/environment/flow_03.png') no-repeat;
-        background-size: contain;
-        background-position: center center;
+        .title {
+          background: url('/images/environment/flow_03.png') no-repeat;
+          background-size: contain;
+          background-position: center center;
+        }
       }
       
       .flow_04 {
-        background: url('/images/environment/flow_04.png') no-repeat;
-        background-size: contain;
-        background-position: center center;
+        .title {
+          background: url('/images/environment/flow_04.png') no-repeat;
+          background-size: contain;
+          background-position: center center;
+        }
       }
       
       .flow_05 {
-        background: url('/images/environment/flow_05.png') no-repeat;
-        background-size: contain;
-        background-position: center center;
+        .title {
+          background: url('/images/environment/flow_05.png') no-repeat;
+          background-size: contain;
+          background-position: center center;
+        }
       }
     }
     
