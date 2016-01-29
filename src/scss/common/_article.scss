@@ -6,6 +6,10 @@
 
 .pickup {
   @include media(pc_min) {
+    h2 {
+      margin-bottom: 30px;
+    }
+    
     .sp_list_inner {
       text-align: center;
       width: 93.4%;
@@ -49,6 +53,7 @@
   }
   
   @include media(sp) {
+    
     .label {
       font-size: $SP_FONT_M;
       padding: 14px 0;
@@ -216,6 +221,7 @@
           .text {
             width: 57%;
             padding: 0;
+            text-align: left;
             
             .badge {
               margin-bottom: 10px;

@@ -4,10 +4,10 @@
 // -------------------------------------------------------------------
 
 .topicpath {
-  @include shadowtopicpath;
+//  @include shadowtopicpath;
   width: 100%;
   background: $COLOR_MAIN;
-  border-bottom: 1px solid $COLOR_LINE;
+//  border-bottom: 1px solid $COLOR_LINE;
   
   ul {
     width: 980px;

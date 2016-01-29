@@ -45,7 +45,7 @@
     }
     .about {
       margin: 0 auto;
-      width: 40%;
+      width: 45%;
       
       @include media(sp){
         width: 100%;
@@ -73,9 +73,12 @@
             background: url('/images/common/arrow_right.png') center right 20px no-repeat;
             padding: 20px;
             font-weight: bold;
+            
+            @inclide media(sp){
+              background: url('/images/common/arrow_right.png') center right 10px no-repeat;
+            }
           }
         }
-
         
       }
     }

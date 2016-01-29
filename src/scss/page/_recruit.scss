@@ -40,9 +40,13 @@ p {
     
     &.flow_test {
       background: url('/images/recruit/flow_03.png') no-repeat;
-      background-size: contain;
+      background-size: 190px;
       background-position: center center;
       padding: 42px 0;
+      
+      @include media(pc_min){
+        background-size: contain;
+      }
     }
     &.flow_decision {
       background: url('/images/recruit/flow_04.png') no-repeat;
