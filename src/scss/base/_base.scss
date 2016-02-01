@@ -28,6 +28,9 @@ body {
     width: 94.5%;
     margin: 0 auto;
   }
+  @include media(sp) {
+    font-size: $SP_FONT_M;
+  }  
 //  
 //  @include media(sp) {
 //    width: 94.5%;
@@ -109,6 +112,10 @@ section {
 
 .cell {
   display: table-cell;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .bg_white {
