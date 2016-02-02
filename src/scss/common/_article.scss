@@ -125,7 +125,11 @@
         
         .img {
           width: 100%;
-          min-height: 170px;
+//          min-height: 170px;
+          
+          &.sp {
+            
+          }
           
           img {
             width: 100%;
@@ -136,6 +140,7 @@
           padding: 15px 20px 20px 20px;
           font-size: $PC_FONT_M;
           font-weight: bold;
+          text-align: left;
           
           .badge {
             @include borderRadiuscate;
@@ -204,11 +209,11 @@
           padding-bottom: 20px;
           margin: 0 auto;
           border: none;
-          display: block;
+          display: table;
           
           .text,
           .img {
-            display: inline-block;
+            display: table-cell;
             vertical-align: middle;
           }
           .title {
@@ -228,10 +233,9 @@
             }
           }
           .img {
-            float: right;
-            width: 38%;
+            width: auto;
             min-height: inherit;
-            margin-left: 5%;
+            padding-left: 5%;
           }
         }
       }

@@ -14,7 +14,6 @@
 
     if( W => X ){
       $(function(){
-        console.log(1);
         $(".marketing ul .heightline").fixHeightSimple({
           responsive: true, 
           responsiveParent: "li" ,
@@ -46,7 +45,7 @@
 {% endblock %}
 
 {% block body %}
-<div class="works">
+<div class="works wrap">
   <div class="main_visual">
     <img src="/images/index/main_v01.png" alt="" class="contents_visual">
   </div>
@@ -193,6 +192,7 @@
         
         <div class="box_right">
          
+         
           <div class="opt">
             <p class="inner">顧客</p>
           </div>
@@ -279,21 +279,21 @@
               <p class="cate">マーケティング事業</p>
               <ul>
                 <li>
-                  <a href="">
+                  <a href="#marketing01">
                     <div class="inner">
                       データ分析
                     </div>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="#marketing02">
                     <div class="inner">
                       マーケティング<br>プラットフォーム
                     </div>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="#marketing04">
                     <div class="inner">
                       コンサルティング
                     </div>
@@ -461,114 +461,220 @@
   
   <section class="main">
     <div class="content_base">
-
-      <!-- 他の仕事について知る  -->
-      <div class="pickup sub">
-        <h2>インタビュー</h2>
-        <div class="articles">
-          <article class="company">
-            <a href="#">
-              <div class="img">
-                <img src="images/common/contents_01.png" alt="">
-              </div>
-              <div class="text">
-                <p class="badge">会社を知る</p>
-                <p class="sp title">学生の皆様へ</p>
-                共に成長できる意欲的な学生をお待ちしております。
-              </div>
-            </a>
-          </article>
-          <article class="company">
-            <a href="#">
-              <div class="img">
-                <img src="images/common/contents_01.png" alt="">
-              </div>
-              <div class="text">
-                <p class="badge">会社を知る</p>
-                <p class="sp title">学生の皆様へ</p>
-                共に成長できる意欲的な学生をお待ちしております。
-              </div>
-            </a>
-          </article>
-          <article class="works">
-            <a href="#">
-              <div class="img">
-                <img src="images/common/contents_01.png" alt="">
-              </div>
-              <div class="text">
-                <p class="badge">人・仕事を知る</p>
-                <p class="sp title">学生の皆様へ</p>
-                共に成長できる意欲的な学生をお待ちしております。
-              </div>
-            </a>
-          </article>
-          <article class="environment">
-            <a href="#">
-              <div class="img">
-                <img src="images/common/contents_01.png" alt="">
-              </div>
-              <div class="text">
-                <p class="badge">働く環境を知る</p>
-                <p class="sp title">学生の皆様へ</p>
-                共に成長できる意欲的な学生をお待ちしております。
-              </div>
-            </a>
-          </article>
-          <article class="recruit">
-            <a href="#">
-              <div class="img">
-                <img src="images/common/contents_01.png" alt="">
-              </div>
-              <div class="text">
-                <p class="badge">採用情報</p>
-                <p class="sp title">学生の皆様へ</p>
-                共に成長できる意欲的な学生をお待ちしております。
-              </div>
-            </a>
-          </article>
-          <article class="recruit">
-            <a href="#">
-              <div class="img">
-                <img src="images/common/contents_01.png" alt="">
-              </div>
-              <div class="text">
-                <p class="badge">採用情報</p>
-                <p class="sp title">学生の皆様へ</p>
-                共に成長できる意欲的な学生をお待ちしております。
-              </div>
-            </a>
-          </article>
-          <article class="recruit">
-            <a href="#">
-              <div class="img">
-                <img src="images/common/contents_01.png" alt="">
-              </div>
-              <div class="text">
-                <p class="badge">採用情報</p>
-                <p class="sp title">学生の皆様へ</p>
-                共に成長できる意欲的な学生をお待ちしております。
-              </div>
-            </a>
-          </article>
-          <article class="recruit">
-            <a href="#">
-              <div class="img">
-                <img src="images/common/contents_01.png" alt="">
-              </div>
-              <div class="text">
-                <p class="badge">採用情報</p>
-                <p class="sp title">学生の皆様へ</p>
-                共に成長できる意欲的な学生をお待ちしております。
-              </div>
-            </a>
-          </article>
+      <div class="interview_cont">
+        <!-- インタビュー pc -->
+        <div class="pc">
+          <div class="pickup sub">
+            <h2>インタビュー</h2>
+            <div class="articles">
+              <article class="works">
+                <a href="#">
+                  <div class="img">
+                    <img src="/images/common/interview_cont_01.png" alt="">
+                  </div>
+                  <div class="text">
+                    <p class="badge">人・仕事を知る</p>
+                    共に成長できる意欲的な学生をお待ちしております。
+                  </div>
+                </a>
+              </article>
+              <article class="works">
+                <a href="#">
+                  <div class="img">
+                    <img src="/images/common/interview_cont_01.png" alt="">
+                  </div>
+                  <div class="text">
+                    <p class="badge">人・仕事を知る</p>
+                    共に成長できる意欲的な学生をお待ちしております。
+                  </div>
+                </a>
+              </article>
+              <article class="works">
+                <a href="#">
+                  <div class="img">
+                    <img src="/images/common/interview_cont_01.png" alt="">
+                  </div>
+                  <div class="text">
+                    <p class="badge">人・仕事を知る</p>
+                    共に成長できる意欲的な学生をお待ちしております。
+                  </div>
+                </a>
+              </article>
+              <article class="works">
+                <a href="#">
+                  <div class="img">
+                    <img src="/images/common/interview_cont_01.png" alt="">
+                  </div>
+                  <div class="text">
+                    <p class="badge">人・仕事を知る</p>
+                    共に成長できる意欲的な学生をお待ちしております。
+                  </div>
+                </a>
+              </article>
+              <article class="works">
+                <a href="#">
+                  <div class="img">
+                    <img src="/images/common/interview_cont_01.png" alt="">
+                  </div>
+                  <div class="text">
+                    <p class="badge">人・仕事を知る</p>
+                    共に成長できる意欲的な学生をお待ちしております。
+                  </div>
+                </a>
+              </article>
+              <article class="works">
+                <a href="#">
+                  <div class="img">
+                    <img src="/images/common/interview_cont_01.png" alt="">
+                  </div>
+                  <div class="text">
+                    <p class="badge">人・仕事を知る</p>
+                    共に成長できる意欲的な学生をお待ちしております。
+                  </div>
+                </a>
+              </article>
+              <article class="works">
+                <a href="#">
+                  <div class="img">
+                    <img src="/images/common/interview_cont_01.png" alt="">
+                  </div>
+                  <div class="text">
+                    <p class="badge">人・仕事を知る</p>
+                    共に成長できる意欲的な学生をお待ちしております。
+                  </div>
+                </a>
+              </article>
+              <article class="works">
+                <a href="#">
+                  <div class="img">
+                    <img src="/images/common/interview_cont_01.png" alt="">
+                  </div>
+                  <div class="text">
+                    <p class="badge">人・仕事を知る</p>
+                    共に成長できる意欲的な学生をお待ちしております。
+                  </div>
+                </a>
+              </article>
+            </div>
+            <p class="notes">※個人情報保護の観点から、仮名を使用している場合もあります。</p>
+          </div>
         </div>
+        <!-- インタビュー pc -->
+
+        <!-- インタビュー sp -->
+        <div class="sp">
+          <div class="pickup sub">
+            <h2>インタビュー</h2>
+            <div class="articles">
+              <article class="works">
+                <a href="#">
+                  <div class="text">
+                    <p class="badge">人・仕事を知る</p>
+                    <p class="sp title">学生の皆様へ</p>
+                    共に成長できる意欲的な学生をお待ちしております。
+                  </div>
+                  <div class="img">
+                    <img src="/images/common/interview_cont_01.png" alt="">
+                  </div>
+                </a>
+              </article>
+              <article class="works">
+                <a href="#">
+                  <div class="text">
+                    <p class="badge">人・仕事を知る</p>
+                    <p class="sp title">学生の皆様へ</p>
+                    共に成長できる意欲的な学生をお待ちしております。
+                  </div>
+                  <div class="img">
+                    <img src="/images/common/interview_cont_01.png" alt="">
+                  </div>
+                </a>
+              </article>
+              <article class="works">
+                <a href="#">
+                  <div class="text">
+                    <p class="badge">人・仕事を知る</p>
+                    <p class="sp title">学生の皆様へ</p>
+                    共に成長できる意欲的な学生をお待ちしております。
+                  </div>
+                  <div class="img">
+                    <img src="/images/common/interview_cont_01.png" alt="">
+                  </div>
+                </a>
+              </article>
+              <article class="works">
+                <a href="#">
+                  <div class="text">
+                    <p class="badge">人・仕事を知る</p>
+                    <p class="sp title">学生の皆様へ</p>
+                    共に成長できる意欲的な学生をお待ちしております。
+                  </div>
+                  <div class="img">
+                    <img src="/images/common/interview_cont_01.png" alt="">
+                  </div>
+                </a>
+              </article>
+              <article class="works">
+                <a href="#">
+                  <div class="text">
+                    <p class="badge">人・仕事を知る</p>
+                    <p class="sp title">学生の皆様へ</p>
+                    共に成長できる意欲的な学生をお待ちしております。
+                  </div>
+                  <div class="img">
+                    <img src="/images/common/interview_cont_01.png" alt="">
+                  </div>
+                </a>
+              </article>
+              <article class="works">
+                <a href="#">
+                  <div class="text">
+                    <p class="badge">人・仕事を知る</p>
+                    <p class="sp title">学生の皆様へ</p>
+                    共に成長できる意欲的な学生をお待ちしております。
+                  </div>
+                  <div class="img">
+                    <img src="/images/common/interview_cont_01.png" alt="">
+                  </div>
+                </a>
+              </article>
+              <article class="works">
+                <a href="#">
+                  <div class="text">
+                    <p class="badge">人・仕事を知る</p>
+                    <p class="sp title">学生の皆様へ</p>
+                    共に成長できる意欲的な学生をお待ちしております。
+                  </div>
+                  <div class="img">
+                    <img src="/images/common/interview_cont_01.png" alt="">
+                  </div>
+                </a>
+              </article>
+              <article class="works">
+                <a href="#">
+                  <div class="text">
+                    <p class="badge">人・仕事を知る</p>
+                    <p class="sp title">学生の皆様へ</p>
+                    共に成長できる意欲的な学生をお待ちしております。
+                  </div>
+                  <div class="img">
+                    <img src="/images/common/interview_cont_01.png" alt="">
+                  </div>
+                </a>
+              </article>
+            </div>
+            <p class="notes">※個人情報保護の観点から、仮名を使用している場合もあります。</p>
+          </div>
+        </div>
+        <!-- インタビュー sp -->
+        
       </div>
+      <!-- interview_cont -->
+      
     </div>
     <!-- content_base -->
   </section>
   
 </div>
-</script>
 
 {% endblock %}

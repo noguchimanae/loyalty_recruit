@@ -16,7 +16,34 @@
     vertical-align: middle;
   }
   .inner {
-  
+    
+    /*　項目　*/
+    .item_works {
+      dt {
+        width: 10px;
+        height: 10px;
+        background: $COLOR_ORANGE;
+        display: inline-block;
+      }
+      dd {
+        display: inline-block;
+      }
+    }
+    
+    .item_environment {
+      dt {
+        width: 10px;
+        height: 10px;
+        background: $COLOR_PURPLE;
+        display: inline-block;
+      }
+      
+      dd {
+        display: inline-block;
+      }
+    }
+    
+    
     article {
       position: relative;
       display: inline-block;

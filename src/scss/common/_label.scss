@@ -1,0 +1,6 @@
+.notes {
+  font-size: $PC_FONT_SSS;
+  @include media(sp){
+    font-size: $SP_FONT_S;
+  }
+}

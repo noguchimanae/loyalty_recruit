@@ -450,6 +450,10 @@ body {
     .content_base {
       font-size: 1.4rem; } }
 
+@media screen and (max-width: 1180px) {
+  .wrap {
+    margin-top: 60px; } }
+
 section {
   border-top: 1px solid #d7d7d7;
   padding-bottom: 60px;
@@ -710,6 +714,12 @@ pagetop
       right: 20px;
       z-index: 999; } }
 
+.notes {
+  font-size: 1.2rem; }
+  @media screen and (max-width: 640px) {
+    .notes {
+      font-size: 1.2rem; } }
+
 .topicpath {
   width: 100%;
   background: #ffffff; }
@@ -922,14 +932,14 @@ a {
       width: 310px;
       border: 1px solid #d7d7d7; }
       .pickup .articles article a .img {
-        width: 100%;
-        min-height: 170px; }
+        width: 100%; }
         .pickup .articles article a .img img {
           width: 100%; }
       .pickup .articles article a .text {
         padding: 15px 20px 20px 20px;
         font-size: 1.6rem;
-        font-weight: bold; }
+        font-weight: bold;
+        text-align: left; }
         .pickup .articles article a .text .badge {
           border-radius: 50px;
           -webkit-border-radius: 50px;
@@ -972,14 +982,14 @@ a {
           padding-bottom: 20px;
           margin: 0 auto;
           border: none;
-          display: block; }
+          display: table; }
           .pickup .articles article a:after {
             display: table;
             clear: both;
             content: ""; }
           .pickup .articles article a .text,
           .pickup .articles article a .img {
-            display: inline-block;
+            display: table-cell;
             vertical-align: middle; }
           .pickup .articles article a .title {
             color: #9e9e9e;
@@ -993,10 +1003,9 @@ a {
             .pickup .articles article a .text .badge {
               margin-bottom: 10px; }
           .pickup .articles article a .img {
-            float: right;
-            width: 38%;
+            width: auto;
             min-height: inherit;
-            margin-left: 5%; } }
+            padding-left: 5%; } }
 
 .pickup.sub .articles article {
   margin-right: 18px; }
@@ -1336,263 +1345,279 @@ footer {
 .about .va_m {
   vertical-align: middle; }
 
-.about .inner article {
-  position: relative;
-  display: inline-block;
-  width: 47%;
-  vertical-align: top;
-  margin-bottom: 50px; }
-  .about .inner article dd {
-    margin-top: 20px; }
-  .about .inner article:nth-child(2n) {
-    margin-left: 5%; }
-  .about .inner article:nth-child(7), .about .inner article:nth-child(8), .about .inner article:nth-child(9) {
-    margin-bottom: 0; }
-  @media screen and (max-width: 640px) {
-    .about .inner article {
-      width: 100%; }
-      .about .inner article:nth-child(2n) {
-        margin-left: 0; } }
-  @media screen and (max-width: 640px) {
-    .about .inner article {
-      margin-bottom: 20px; } }
-  .about .inner article dt {
-    width: 100%;
-    color: #ffffff;
-    padding: 10px 0;
-    text-align: center;
-    font-size: 1.6rem; }
-    .about .inner article dt span {
-      display: inline-block;
+.about .inner {
+  /*　項目　*/ }
+  .about .inner .item_works dt {
+    width: 10px;
+    height: 10px;
+    background: #ff661b;
+    display: inline-block; }
+  .about .inner .item_works dd {
+    display: inline-block; }
+  .about .inner .item_environment dt {
+    width: 10px;
+    height: 10px;
+    background: #8562d3;
+    display: inline-block; }
+  .about .inner .item_environment dd {
+    display: inline-block; }
+  .about .inner article {
+    position: relative;
+    display: inline-block;
+    width: 47%;
+    vertical-align: top;
+    margin-bottom: 50px; }
+    .about .inner article dd {
+      margin-top: 20px; }
+    .about .inner article:nth-child(2n) {
+      margin-left: 5%; }
+    .about .inner article:nth-child(7), .about .inner article:nth-child(8), .about .inner article:nth-child(9) {
+      margin-bottom: 0; }
+    @media screen and (max-width: 640px) {
+      .about .inner article {
+        width: 100%; }
+        .about .inner article:nth-child(2n) {
+          margin-left: 0; } }
+    @media screen and (max-width: 640px) {
+      .about .inner article {
+        margin-bottom: 20px; } }
+    .about .inner article dt {
+      width: 100%;
+      color: #ffffff;
       padding: 10px 0;
-      width: 45px;
       text-align: center;
-      position: absolute;
-      background: #ffffff;
-      top: -10px;
-      left: -10px;
-      font-size: 1.6rem;
-      font-weight: bold; }
-  .about .inner article dd {
-    font-weight: bold;
-    text-align: bottom; }
-  .about .inner article.box01 dd {
-    background: url("/images/company/about_01_01.png") bottom right no-repeat;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 20px;
-    padding: 0 0 20px 0; }
-    .about .inner article.box01 dd p {
-      margin-right: 150px; }
-    .about .inner article.box01 dd .before {
-      font-size: 16px;
-      padding-bottom: 30px;
-      background: url("/images/company/about_01_02.png") bottom center no-repeat; }
-      .about .inner article.box01 dd .before span {
-        font-size: 30px; }
-    .about .inner article.box01 dd .after {
-      font-size: 16px; }
-      .about .inner article.box01 dd .after span {
-        font-size: 80px;
-        line-height: 1; }
-    @media screen and (max-width: 1180px) {
-      .about .inner article.box01 dd p {
-        margin-right: 50px; } }
-    @media screen and (max-width: 640px) {
-      .about .inner article.box01 dd {
-        padding: 0 0 40px 0; }
-        .about .inner article.box01 dd p {
-          margin-right: 70px; }
-        .about .inner article.box01 dd .before {
-          font-size: 14px;
-          padding-bottom: 40px; }
-          .about .inner article.box01 dd .before span {
-            font-size: 20px; }
-        .about .inner article.box01 dd .after {
-          font-size: 14px; }
-          .about .inner article.box01 dd .after span {
-            font-size: 50px;
-            line-height: 1.4; } }
-  .about .inner article.box02 dd {
-    text-align: right;
-    background: url("/images/company/about_02.png") bottom right no-repeat;
-    padding-top: 90px; }
-    .about .inner article.box02 dd p {
-      font-size: 2.2rem; }
-      .about .inner article.box02 dd p span {
-        font-size: 1.3rem; }
-  @media screen and (max-width: 1180px) {
-    .about .inner article.box02 dd {
-      background: url("/images/company/about_02.png") top center no-repeat;
-      background-size: contain;
-      padding-top: 50px; } }
-  .about .inner article.box03 dd {
-    background: url("/images/company/about_03.png") center left no-repeat;
-    padding: 80px 0 0 0; }
-    .about .inner article.box03 dd p {
-      text-shadow: 0px 3px 0px #ffffff;
-      font-size: 20px;
-      text-align: right; }
-      .about .inner article.box03 dd p span {
-        font-size: 80px; }
-    @media screen and (max-width: 1180px) {
-      .about .inner article.box03 dd {
-        padding: 30px 0 0 0;
-        background-size: contain; }
-        .about .inner article.box03 dd p {
-          padding-top: 0;
-          text-align: left; } }
-  .about .inner article.box04 dd {
-    background: url("/images/company/about_04.png") center left no-repeat;
-    padding: 50px 10px 60px 22px; }
-    .about .inner article.box04 dd p {
-      font-size: 20px;
-      text-align: center;
-      line-height: 1.2; }
-      .about .inner article.box04 dd p:first-child {
-        padding-top: 30px; }
-      .about .inner article.box04 dd p span {
-        font-size: 80px; }
-    @media screen and (max-width: 1180px) {
-      .about .inner article.box04 dd {
-        background: url("/images/company/about_04.png") center center no-repeat;
-        background-size: contain;
-        padding: 10px 10px 25px 30px; } }
-  .about .inner article.box05 dd {
-    background: url("/images/company/about_05.png") center left 50px no-repeat;
-    padding: 20px 90px 10px 190px;
-    text-align: right;
-    font-size: 20px; }
-    .about .inner article.box05 dd p span {
-      line-height: 1.0; }
-      .about .inner article.box05 dd p span.large {
-        font-size: 110px; }
-      .about .inner article.box05 dd p span.small {
-        font-size: 14px; }
-    @media screen and (max-width: 1180px) {
-      .about .inner article.box05 dd {
-        padding: 30px 20px 30px 150px;
-        background: url("/images/company/about_05.png") center left 20px no-repeat; }
-        .about .inner article.box05 dd p span {
-          line-height: 1.0; }
-          .about .inner article.box05 dd p span.large {
-            font-size: 80px; }
-          .about .inner article.box05 dd p span.small {
-            font-size: 14px; } }
-    @media screen and (max-width: 640px) {
-      .about .inner article.box05 dd {
-        padding: 20px 20px 10px 150px; } }
-  .about .inner article.box06 dd {
-    background: url("/images/company/about_06.png") center no-repeat;
-    padding: 20px 10px;
-    text-align: center;
-    font-size: 20px; }
-    .about .inner article.box06 dd p {
-      text-align: center;
-      line-height: 1.2;
-      display: inline-block; }
-      .about .inner article.box06 dd p span {
-        font-size: 100px; }
-    @media screen and (max-width: 1180px) {
-      .about .inner article.box06 dd {
-        background-size: contain;
-        padding: 10px 0; } }
-    @media screen and (max-width: 640px) {
-      .about .inner article.box06 dd p span {
-        font-size: 80px; } }
-  .about .inner article.box07, .about .inner article.box08, .about .inner article.box09 {
-    width: 30%; }
-    .about .inner article.box07 dt, .about .inner article.box08 dt, .about .inner article.box09 dt {
-      padding: 10px 0 10px 25px;
-      width: auto; }
-    @media screen and (max-width: 640px) {
-      .about .inner article.box07, .about .inner article.box08, .about .inner article.box09 {
-        width: 100%; } }
-  @media screen and (max-width: 1180px) {
-    .about .inner article.box08 dt, .about .inner article.box09 dt {
-      padding: 20px; } }
-  @media screen and (max-width: 640px) {
-    .about .inner article.box08 dt, .about .inner article.box09 dt {
-      padding: 10px; } }
-  .about .inner article.box07 {
-    margin-right: 4.5%; }
-    .about .inner article.box07 dd {
-      background: url("/images/company/about_07.png") center left no-repeat;
-      padding: 40px 0 40px 90px; }
-      .about .inner article.box07 dd p {
-        font-size: 30px;
-        line-height: 0.9; }
-        .about .inner article.box07 dd p span.large {
-          font-size: 80px; }
-        .about .inner article.box07 dd p span.small {
-          font-size: 20px; }
-    @media screen and (max-width: 1180px) {
-      .about .inner article.box07 {
-        margin-right: 4%; }
-        .about .inner article.box07 dt {
-          padding: 10px 10px 10px 45px; }
-        .about .inner article.box07 dd {
-          padding: 20px 0px 20px 10px;
-          text-align: center; }
-          .about .inner article.box07 dd p span.large {
-            font-size: 70px; } }
-    @media screen and (max-width: 640px) {
-      .about .inner article.box07 dd {
-        padding: 20px 0 20px 10px; } }
-  .about .inner article.box08 {
-    margin-right: 4.5%;
-    margin-left: 0; }
-    .about .inner article.box08 dd {
-      background: url("/images/company/about_08.png") bottom center no-repeat;
-      padding: 20px 0 90px 0; }
-      .about .inner article.box08 dd p {
+      font-size: 1.6rem; }
+      .about .inner article dt span {
+        display: inline-block;
+        padding: 10px 0;
+        width: 45px;
         text-align: center;
-        font-size: 18px; }
-        .about .inner article.box08 dd p span {
-          font-size: 12px; }
+        position: absolute;
+        background: #ffffff;
+        top: -10px;
+        left: -10px;
+        font-size: 1.6rem;
+        font-weight: bold; }
+    .about .inner article dd {
+      font-weight: bold;
+      text-align: bottom; }
+    .about .inner article.box01 dd {
+      background: url("/images/company/about_01_01.png") bottom right no-repeat;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 20px;
+      padding: 0 0 20px 0; }
+      .about .inner article.box01 dd p {
+        margin-right: 150px; }
+      .about .inner article.box01 dd .before {
+        font-size: 16px;
+        padding-bottom: 30px;
+        background: url("/images/company/about_01_02.png") bottom center no-repeat; }
+        .about .inner article.box01 dd .before span {
+          font-size: 30px; }
+      .about .inner article.box01 dd .after {
+        font-size: 16px; }
+        .about .inner article.box01 dd .after span {
+          font-size: 80px;
+          line-height: 1; }
+      @media screen and (max-width: 1180px) {
+        .about .inner article.box01 dd p {
+          margin-right: 50px; } }
+      @media screen and (max-width: 640px) {
+        .about .inner article.box01 dd {
+          padding: 0 0 40px 0; }
+          .about .inner article.box01 dd p {
+            margin-right: 70px; }
+          .about .inner article.box01 dd .before {
+            font-size: 14px;
+            padding-bottom: 40px; }
+            .about .inner article.box01 dd .before span {
+              font-size: 20px; }
+          .about .inner article.box01 dd .after {
+            font-size: 14px; }
+            .about .inner article.box01 dd .after span {
+              font-size: 50px;
+              line-height: 1.4; } }
+    .about .inner article.box02 dd {
+      text-align: right;
+      background: url("/images/company/about_02.png") bottom right no-repeat;
+      padding-top: 90px; }
+      .about .inner article.box02 dd p {
+        font-size: 2.2rem; }
+        .about .inner article.box02 dd p span {
+          font-size: 1.3rem; }
     @media screen and (max-width: 1180px) {
-      .about .inner article.box08 {
-        margin-right: 4%; }
-        .about .inner article.box08 dd {
-          padding: 0 0 80px 0; } }
+      .about .inner article.box02 dd {
+        background: url("/images/company/about_02.png") top center no-repeat;
+        background-size: contain;
+        padding-top: 50px; } }
+    .about .inner article.box03 dd {
+      background: url("/images/company/about_03.png") center left no-repeat;
+      padding: 80px 0 0 0; }
+      .about .inner article.box03 dd p {
+        text-shadow: 0px 3px 0px #ffffff;
+        font-size: 20px;
+        text-align: right; }
+        .about .inner article.box03 dd p span {
+          font-size: 80px; }
+      @media screen and (max-width: 1180px) {
+        .about .inner article.box03 dd {
+          padding: 30px 0 0 0;
+          background-size: contain; }
+          .about .inner article.box03 dd p {
+            padding-top: 0;
+            text-align: left; } }
+    .about .inner article.box04 dd {
+      background: url("/images/company/about_04.png") center left no-repeat;
+      padding: 50px 10px 60px 22px; }
+      .about .inner article.box04 dd p {
+        font-size: 20px;
+        text-align: center;
+        line-height: 1.2; }
+        .about .inner article.box04 dd p:first-child {
+          padding-top: 30px; }
+        .about .inner article.box04 dd p span {
+          font-size: 80px; }
+      @media screen and (max-width: 1180px) {
+        .about .inner article.box04 dd {
+          background: url("/images/company/about_04.png") center center no-repeat;
+          background-size: contain;
+          padding: 10px 10px 25px 30px; } }
+    .about .inner article.box05 dd {
+      background: url("/images/company/about_05.png") center left 50px no-repeat;
+      padding: 20px 90px 10px 190px;
+      text-align: right;
+      font-size: 20px; }
+      .about .inner article.box05 dd p span {
+        line-height: 1.0; }
+        .about .inner article.box05 dd p span.large {
+          font-size: 110px; }
+        .about .inner article.box05 dd p span.small {
+          font-size: 14px; }
+      @media screen and (max-width: 1180px) {
+        .about .inner article.box05 dd {
+          padding: 30px 20px 30px 150px;
+          background: url("/images/company/about_05.png") center left 20px no-repeat; }
+          .about .inner article.box05 dd p span {
+            line-height: 1.0; }
+            .about .inner article.box05 dd p span.large {
+              font-size: 80px; }
+            .about .inner article.box05 dd p span.small {
+              font-size: 14px; } }
+      @media screen and (max-width: 640px) {
+        .about .inner article.box05 dd {
+          padding: 20px 20px 10px 150px; } }
+    .about .inner article.box06 dd {
+      background: url("/images/company/about_06.png") center no-repeat;
+      padding: 20px 10px;
+      text-align: center;
+      font-size: 20px; }
+      .about .inner article.box06 dd p {
+        text-align: center;
+        line-height: 1.2;
+        display: inline-block; }
+        .about .inner article.box06 dd p span {
+          font-size: 100px; }
+      @media screen and (max-width: 1180px) {
+        .about .inner article.box06 dd {
+          background-size: contain;
+          padding: 10px 0; } }
+      @media screen and (max-width: 640px) {
+        .about .inner article.box06 dd p span {
+          font-size: 80px; } }
+    .about .inner article.box07, .about .inner article.box08, .about .inner article.box09 {
+      width: 30%; }
+      .about .inner article.box07 dt, .about .inner article.box08 dt, .about .inner article.box09 dt {
+        padding: 10px 0 10px 25px;
+        width: auto; }
+      @media screen and (max-width: 640px) {
+        .about .inner article.box07, .about .inner article.box08, .about .inner article.box09 {
+          width: 100%; } }
+    @media screen and (max-width: 1180px) {
+      .about .inner article.box08 dt, .about .inner article.box09 dt {
+        padding: 20px; } }
     @media screen and (max-width: 640px) {
+      .about .inner article.box08 dt, .about .inner article.box09 dt {
+        padding: 10px; } }
+    .about .inner article.box07 {
+      margin-right: 4.5%; }
+      .about .inner article.box07 dd {
+        background: url("/images/company/about_07.png") center left no-repeat;
+        padding: 40px 0 40px 90px; }
+        .about .inner article.box07 dd p {
+          font-size: 30px;
+          line-height: 0.9; }
+          .about .inner article.box07 dd p span.large {
+            font-size: 80px; }
+          .about .inner article.box07 dd p span.small {
+            font-size: 20px; }
+      @media screen and (max-width: 1180px) {
+        .about .inner article.box07 {
+          margin-right: 4%; }
+          .about .inner article.box07 dt {
+            padding: 10px 10px 10px 45px; }
+          .about .inner article.box07 dd {
+            padding: 20px 0px 20px 10px;
+            text-align: center; }
+            .about .inner article.box07 dd p span.large {
+              font-size: 70px; } }
+      @media screen and (max-width: 640px) {
+        .about .inner article.box07 dd {
+          padding: 20px 0 20px 10px; } }
+    .about .inner article.box08 {
+      margin-right: 4.5%;
+      margin-left: 0; }
       .about .inner article.box08 dd {
-        padding: 0 0 90px 0; } }
-  .about .inner article.box09 dd {
-    zoom: 1;
-    padding-top: 80px;
-    background: url("/images/company/about_09.png") top center no-repeat; }
-    .about .inner article.box09 dd:after {
-      display: table;
-      clear: both;
-      content: ""; }
-    .about .inner article.box09 dd p {
-      display: inline-block; }
-      .about .inner article.box09 dd p.number span {
-        font-size: 80px; }
-      .about .inner article.box09 dd p.text {
-        text-align: right;
-        float: right; }
-  @media screen and (max-width: 1180px) {
+        background: url("/images/company/about_08.png") bottom center no-repeat;
+        padding: 20px 0 90px 0; }
+        .about .inner article.box08 dd p {
+          text-align: center;
+          font-size: 18px; }
+          .about .inner article.box08 dd p span {
+            font-size: 12px; }
+      @media screen and (max-width: 1180px) {
+        .about .inner article.box08 {
+          margin-right: 4%; }
+          .about .inner article.box08 dd {
+            padding: 0 0 80px 0; } }
+      @media screen and (max-width: 640px) {
+        .about .inner article.box08 dd {
+          padding: 0 0 90px 0; } }
     .about .inner article.box09 dd {
-      background-size: contain;
-      padding-top: 70px; } }
-  .about .inner article.company dt {
-    background: #ff661b; }
-    .about .inner article.company dt span {
-      border: 2px solid #ff661b;
+      zoom: 1;
+      padding-top: 80px;
+      background: url("/images/company/about_09.png") top center no-repeat; }
+      .about .inner article.box09 dd:after {
+        display: table;
+        clear: both;
+        content: ""; }
+      .about .inner article.box09 dd p {
+        display: inline-block; }
+        .about .inner article.box09 dd p.number span {
+          font-size: 80px; }
+        .about .inner article.box09 dd p.text {
+          text-align: right;
+          float: right; }
+    @media screen and (max-width: 1180px) {
+      .about .inner article.box09 dd {
+        background-size: contain;
+        padding-top: 70px; } }
+    .about .inner article.company dt {
+      background: #ff661b; }
+      .about .inner article.company dt span {
+        border: 2px solid #ff661b;
+        color: #ff661b; }
+    .about .inner article.company dd {
       color: #ff661b; }
-  .about .inner article.company dd {
-    color: #ff661b; }
-  .about .inner article.environment dt {
-    background: #8562d3; }
-    .about .inner article.environment dt span {
-      border: 2px solid #8562d3;
+    .about .inner article.environment dt {
+      background: #8562d3; }
+      .about .inner article.environment dt span {
+        border: 2px solid #8562d3;
+        color: #8562d3; }
+    .about .inner article.environment dd {
       color: #8562d3; }
-  .about .inner article.environment dd {
-    color: #8562d3; }
-    .about .inner article.environment dd p {
-      color: #8562d3; }
+      .about .inner article.environment dd p {
+        color: #8562d3; }
 
 .about .animated {
   -webkit-animation-duration: 1s;
@@ -1661,8 +1686,32 @@ footer {
   -webkit-transform-origin: center bottom;
   transform-origin: center bottom; }
 
+@media screen and (min-width: 640px) {
+  .works .content_base .interview_cont .pc {
+    display: block; } }
+
+@media screen and (max-width: 1180px) {
+  .works .content_base .interview_cont .pc {
+    display: none; } }
+
+@media screen and (min-width: 640px) {
+  .works .content_base .interview_cont .sp {
+    display: none; } }
+
+@media screen and (max-width: 1180px) {
+  .works .content_base .interview_cont .sp {
+    display: block; } }
+
 .works .content_base .text {
   text-align: center; }
+
+@media screen and (max-width: 1180px) {
+  .works .content_base .figure.pc {
+    display: block; } }
+
+@media screen and (max-width: 640px) {
+  .works .content_base .figure.pc {
+    display: none; } }
 
 .works .content_base .figure .box_left {
   width: 72%;
@@ -1831,6 +1880,14 @@ footer {
   .works .content_base .figure ul li a {
     width: 100%;
     display: inline-block; }
+
+@media screen and (max-width: 1180px) {
+  .works .content_base .sp {
+    display: none; } }
+
+@media screen and (max-width: 640px) {
+  .works .content_base .sp {
+    display: block !important; } }
 
 .works .content_base .sp .figure .box_left {
   width: 55%;

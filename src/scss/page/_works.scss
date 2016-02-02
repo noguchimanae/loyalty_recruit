@@ -5,11 +5,44 @@
 // ------------------------------------
 
 .works {
+  
   .content_base {
+    
+    .interview_cont {
+      .pc {
+        @include media(pc){
+          display: block;
+        }
+        @include media(pc_min){
+          display: none;
+        }
+      }
+
+      .sp {
+
+        @include media(pc){
+          display: none;
+        }
+
+        @include media(pc_min){
+          display: block;
+        }
+      }
+    }
+    
     .text {
       text-align: center;
     }
     .figure {
+      
+      &.pc {
+        @include media(pc_min){
+          display: block;
+        }
+        @include media(sp){
+          display: none;
+        }
+      }
       
       .box_left {
         width: 72%;
@@ -247,6 +280,13 @@
       }
     }
     .sp {
+      @include media(pc_min){
+        display: none;
+      }
+      @include media(sp){
+        display: block!important;
+      }
+      
       .figure {
         
         .box_left {
